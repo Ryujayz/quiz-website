@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Pengenalan Pemrograman</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="assets/logo-quiz.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-code"></i>
+                    <span>Programming Quiz</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="dev.html"><i class="fas fa-users"></i> Developer</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="dashboard">
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1>Quiz Pengenalan Pemrograman</h1>
+                <p>Uji pengetahuan Anda dalam Matematika, Bahasa Inggris, IPS, dan Pemrograman!</p>
+                <p>Setiap quiz terdiri dari minimal 20 soal untuk menguji kemampuan Anda.</p>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Programming Illustration">
+            </div>
+        </div>
+
+        <section class="quiz-selection">
+            <h2>Pilih Quiz yang Ingin Anda Kerjakan</h2>
+            <p class="subtitle">Klik pada salah satu mata pelajaran di bawah untuk memulai quiz</p>
+            
+            <div class="quiz-cards">
+                <div class="quiz-card" data-subject="matematika">
+                    <div class="quiz-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Matematika</h3>
+                    <p>20 soal tentang konsep dasar matematika dan logika</p>
+                    <div class="quiz-meta">
+                        <span><i class="fas fa-clock"></i> 15 menit</span>
+                        <span><i class="fas fa-question-circle"></i> 20 soal</span>
+                    </div>
+                    <button class="start-btn" data-subject="matematika">Mulai Quiz</button>
+                </div>
+
+                <div class="quiz-card" data-subject="bahasa-inggris">
+                    <div class="quiz-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Bahasa Inggris</h3>
+                    <p>20 soal tentang grammar, vocabulary, dan reading comprehension</p>
+                    <div class="quiz-meta">
+                        <span><i class="fas fa-clock"></i> 15 menit</span>
+                        <span><i class="fas fa-question-circle"></i> 20 soal</span>
+                    </div>
+                    <button class="start-btn" data-subject="bahasa-inggris">Mulai Quiz</button>
+                </div>
+
+                <div class="quiz-card" data-subject="ips">
+                    <div class="quiz-icon">
+                        <i class="fas fa-globe-asia"></i>
+                    </div>
+                    <h3>Ilmu Pengetahuan Sosial</h3>
+                    <p>20 soal tentang sejarah, geografi, dan ekonomi</p>
+                    <div class="quiz-meta">
+                        <span><i class="fas fa-clock"></i> 15 menit</span>
+                        <span><i class="fas fa-question-circle"></i> 20 soal</span>
+                    </div>
+                    <button class="start-btn" data-subject="ips">Mulai Quiz</button>
+                </div>
+
+                <div class="quiz-card" data-subject="pemrograman">
+                    <div class="quiz-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Pemrograman</h3>
+                    <p>20 soal tentang dasar-dasar pemrograman dan algoritma</p>
+                    <div class="quiz-meta">
+                        <span><i class="fas fa-clock"></i> 15 menit</span>
+                        <span><i class="fas fa-question-circle"></i> 20 soal</span>
+                    </div>
+                    <button class="start-btn" data-subject="pemrograman">Mulai Quiz</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="instructions">
+            <h2>Instruksi Pengerjaan Quiz</h2>
+            <div class="instruction-list">
+                <div class="instruction-item">
+                    <i class="fas fa-mouse-pointer"></i>
+                    <h3>Pilih Mata Pelajaran</h3>
+                    <p>Klik pada salah satu mata pelajaran yang ingin Anda kerjakan</p>
+                </div>
+                <div class="instruction-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>Waktu Terbatas</h3>
+                    <p>Setiap quiz memiliki batas waktu yang berbeda-beda</p>
+                </div>
+                <div class="instruction-item">
+                    <i class="fas fa-question-circle"></i>
+                    <h3>Jawab Soal</h3>
+                    <p>Jawab semua 20 soal dengan memilih opsi yang tersedia</p>
+                </div>
+                <div class="instruction-item">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Lihat Hasil</h3>
+                    <p>Setelah selesai, lihat skor dan pembahasan jawaban</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="loading-modal" id="loadingModal">
+            <div class="loading-content">
+                <div class="spinner"></div>
+                <h3>Memuat Quiz...</h3>
+                <p id="loadingSubject">Menyiapkan soal-soal untuk Anda</p>
+                <div class="loading-details">
+                    <p><i class="fas fa-database"></i> Mengambil soal dari database...</p>
+                    <p><i class="fas fa-random"></i> Mengacak urutan soal...</p>
+                    <p><i class="fas fa-check-circle"></i> Menyiapkan timer...</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-code"></i>
+                <span>Programming Quiz</span>
+            </div>
+            <p>Quiz Pengenalan Pemrograman &copy; 2025. Dibuat untuk tujuan edukasi.</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="dev.html">Developer</a>
+                <a href="#" id="resetProgress">Reset Progress</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
